@@ -2,6 +2,8 @@ def main(n):
     y = [(int(i) * (1 + idx % 2)) for idx, i in enumerate(reversed(list(n)))]
     return (sum(i - 9 if i > 9 else i for i in y)) % 10 == 0
 
+# yes thats it XD
+
 '''-------------------testing---------------------'''
 
 def test_luhn_algorithm():
